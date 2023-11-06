@@ -1,0 +1,87 @@
+/* vars */
+:root{
+    --color-brand-light:#819B57;
+    --color-brand-dark: #465929;
+    --color-primary-light:#FAF4EA;
+    --color-primary-dark: #31261A;
+    --color-brown:#A18268;
+}
+
+/* base */
+body{
+color: var(--color-primary-dark);
+}
+
+ul{
+    list-style-type: none;
+}
+
+/* buttons */
+.get-call-button{
+    color: var(--color-primary-light);
+    border-radius: 8px;
+    border: 2px solid var(--color-brand-light);
+    background: var(--color-brand-light);
+    cursor: pointer;
+}
+
+.get-call-button:hover{
+    color: var(--color-brand-dark);
+    background-color: transparent;
+}
+
+/* links */
+.nav-link{
+    color: var(--color-primary-light);
+}
+
+.nav-link:hover {
+    color: var(--color-brand-light);
+}
+
+/* first section */
+.hero-title{
+    color: var(--color-primary-light)  ;
+}
+
+.hero-title .accent{
+    color: var(--color-brand-light);
+}
+
+/* traditions section */
+.advantages-list{
+    color: var(--color-primary-light);
+    background-color: var(--color-brand-light);
+}
+
+.accent-text{
+    color: var(--color-brand-light);
+}
+
+/* chiefs section */
+.section-title .accent{
+    color: var(--color-brand-dark);
+}
+
+/* formats section */
+.card{
+    color:var(--color-primary-light);
+}
+
+/* contacts section */
+.fill-form-text{
+    color: var(--color-brand-dark);
+}
+
+/* footer */
+.footer{
+    color: var(--color-primary-light);
+}
+
+.footer .address-link{
+    color: var(--color-primary-light);
+}
+
+.protect-data-text{
+    color: var(--color-brown);
+}

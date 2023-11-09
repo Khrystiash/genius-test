@@ -43,13 +43,15 @@
           </h1>
         </div>
       </section>
+      <section class="section advantages">
+        <ul class="advantages-list">
+          <li class="advantages-item">Великий попит на ринку</li>
+          <li class="advantages-item">Доступні за бюджетом формати</li>
+          <li class="advantages-item">Досвідчена управлінська команда</li>
+        </ul>
+      </section>
       <section class="section traditions" id="traditions-section">
         <div class="container">
-          <ul class="advantages-list">
-            <li class="advantages-item">Великий попит на ринку</li>
-            <li class="advantages-item">Доступні за бюджетом формати</li>
-            <li class="advantages-item">Досвідчена управлінська команда</li>
-          </ul>
           <div class="traditions-container">
             <div class="traditions-info">
               <h2 class="section-title">Новий формат традицій</h2>
@@ -67,6 +69,7 @@
             </div>
             <div class="traditions-image">
               <img
+                class="bakerman-image"
                 src="./images/bakerman.jpg"
                 alt="Чоловік пекар з візком багетів"
               />
@@ -82,7 +85,11 @@
           <ul>
             <li>
               <article class="chief-card">
-                <img src="./images/nastia.jpg" alt="Фото Насті" />
+                <img
+                  class="chiefs-photo"
+                  src="./images/nastia.jpg"
+                  alt="Фото шеф кухаря Насті"
+                />
                 <h3 class="chief-name">Настя</h3>
                 <div class="chief-info">
                   <p>Привіт, я Настя!</p>
@@ -93,7 +100,11 @@
             </li>
             <li>
               <article class="chief-card">
-                <img src="./images/vlad.jpg" alt="Фото Влада" />
+                <img
+                  class="chiefs-photo"
+                  src="./images/vlad.jpg"
+                  alt="Фото шеф кухаря Влада"
+                />
                 <h3 class="chief-name">Влад</h3>
                 <div class="chief-info">
                   <p>Привіт, я Влад!</p>
@@ -112,6 +123,11 @@
       <section class="section formats" id="formats-section">
         <div class="container">
           <h2 class="section-title">Формати</h2>
+          <button class="carousel-button" type="button">
+            <svg class="carousel-arrow">
+              <use href="./images/icons.svg#icon-arrow"></use>
+            </svg>
+          </button>
           <ul class="formats-list">
             <li class="formats-item">
               <article class="location-card">
@@ -154,6 +170,11 @@
               </article>
             </li>
           </ul>
+          <button class="carousel-button" type="button">
+            <svg class="carousel-arrow">
+              <use href="./images/icons.svg#icon-arrow"></use>
+            </svg>
+          </button>
         </div>
       </section>
       <section class="section contacts" id="contacts-section">
@@ -221,12 +242,16 @@
             </li>
             <li>
               <a class="contact-link" href="#" target="_blank">
-                <!-- facebook -->
+                <svg class="contact-social">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
               </a>
             </li>
             <li>
               <a class="contact-link" href="#" target="_blank">
-                <!-- insta -->
+                <svg class="contact-social">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
               </a>
             </li>
           </ul>

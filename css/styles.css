@@ -34,6 +34,7 @@
   --color-primary-dark: #31261a;
   --color-brown: #a18268;
   --color-grey: #cfcfbc;
+  --color-background-grey: #d9d9d9;
 }
 
 /* base */
@@ -43,6 +44,7 @@
 
 body {
   color: var(--color-primary-dark);
+  background-color: var(--color-primary-light);
   font-family: 'Poppins', sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -174,6 +176,11 @@ p {
 }
 
 /* traditions section */
+.section.advantages {
+  padding: 0;
+}
+
+/* traditions section */
 .traditions {
   padding-top: 0;
 }
@@ -230,14 +237,37 @@ p {
   text-transform: uppercase;
 }
 
+.bakerman-image {
+  border-radius: 400px 400px 0px 0px;
+  flex-shrink: 0;
+}
+
 /* chiefs section */
+.chiefs .section-title::before,
+.chiefs .section-title::after {
+  display: block;
+  width: 352px;
+  border: 2px solid var(--color-grey);
+  content: '';
+}
+
 .chiefs .section-title {
   text-align: center;
+  margin: 0 auto 80px;
+  max-width: 520px;
   margin-bottom: 80px;
 }
 
 .section-title .accent {
   color: var(--color-brand-dark);
+}
+
+.chiefs-photo {
+  border-radius: 4px 4px 4px 200px;
+  background-color: var(--color-background-grey);
+  border: var(--color-grey);
+  box-shadow: -16px 16px 0 0 var(--color-primary-light),
+    -16px 16px 0 1px var(--color-brown);
 }
 
 .chief-name {
@@ -249,6 +279,29 @@ p {
 .formats .section-title {
   text-align: center;
   margin-bottom: 80px;
+}
+
+.carousel-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 50%;
+  fill: var(--color-primary-dark);
+  background-color: transparent;
+}
+
+.carousel-button:hover {
+  background-color: var(--color-primary-dark);
+}
+
+.carousel-arrow {
+  width: 44px;
+  height: 44px;
+}
+
+.carousel-arrow:hover {
+  background-color: var(--color-primary-light);
 }
 
 .formats-list {
@@ -317,6 +370,16 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
+}
+
+.contact-social {
+  fill: var(--color-primary-light);
+  width: 32px;
+  height: 32px;
+}
+
+.contact-social:hover {
+  fill: var(--color-brand-light);
 }
 
 .protect-data-text {

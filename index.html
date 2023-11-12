@@ -29,7 +29,7 @@
               </li>
             </ul>
           </nav>
-          <button class="get-call-button" type="button">
+          <button class="get-call-button open-modal" type="button">
             Замовити дзвінок
           </button>
         </div>
@@ -80,7 +80,7 @@
       <section class="section chiefs" id="chiefs-section">
         <div class="container">
           <h2 class="section-title">
-            Найкращі <span class="accent">шеф кухарі</span>
+            Найкращі<br /><span class="accent">шеф кухарі</span>
           </h2>
           <ul class="chiefs-list">
             <li class="chiefs-item">
@@ -130,7 +130,7 @@
         <div class="container">
           <h2 class="section-title">Формати</h2>
           <div class="formats-container">
-            <button class="carousel-button" type="button">
+            <button class="carousel-button left" type="button">
               <svg class="carousel-arrow">
                 <use href="./images/icons.svg#icon-arrow"></use>
               </svg>
@@ -177,7 +177,7 @@
                 </article>
               </li>
             </ul>
-            <button class="carousel-button" type="button">
+            <button class="carousel-button right" type="button">
               <svg class="carousel-arrow">
                 <use href="./images/icons.svg#icon-arrow"></use>
               </svg>
@@ -218,10 +218,12 @@
     <footer class="footer">
       <div class="container">
         <nav class="footer-navigation">
-          <a href="/">
-            <img src="./images/logo.svg" alt="Логотип сучасної пекарні" />
-          </a>
-          <ul>
+          <div class="logo">
+            <a href="/">
+              <img src="./images/logo.svg" alt="Логотип сучасної пекарні" />
+            </a>
+          </div>
+          <ul class="footer-menu-list">
             <li>
               <a class="nav-link" href="#traditions-section">Наші традиції</a>
             </li>
@@ -230,49 +232,57 @@
             <li><a class="nav-link" href="#contacts-section">Контакти</a></li>
           </ul>
         </nav>
-        <address class="contact-info">
-          <ul>
-            <li>
-              <a class="contact-link" href="tel:+380960000007"
-                >+ 38 (096) 000 00 07</a
-              >
-            </li>
-            <li>
-              <a class="contact-link" href="mailto:shopbakery@gmail.com"
-                >shopbakery@gmail.com</a
-              >
-            </li>
-            <li>
-              <a
-                class="contact-link"
-                href="https://maps.app.goo.gl/SvD66bGZupn16T4t5"
-                target="_blank"
-                >Україна, м. Київ, вул. Січових Стрільців 54</a
-              >
-            </li>
-            <li>
-              <a class="contact-link" href="#" target="_blank">
-                <svg class="contact-social">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="contact-link" href="#" target="_blank">
-                <svg class="contact-social">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </address>
-        <div class="protect-data-container">
-          <a class="policy-link" href="#" target="_blank"
-            >Політика конфіденційності</a
-          >
-          <p class="protect-data-text">&copy; 2022 Дані захищені</p>
+        <div class="external-links">
+          <address class="contact-info">
+            <ul>
+              <li>
+                <a class="contact-link" href="tel:+380960000007"
+                  >+ 38 (096) 000 00 07</a
+                >
+              </li>
+              <li>
+                <a class="contact-link" href="mailto:shopbakery@gmail.com"
+                  >shopbakery@gmail.com</a
+                >
+              </li>
+              <li>
+                <a
+                  class="contact-link"
+                  href="https://maps.app.goo.gl/SvD66bGZupn16T4t5"
+                  target="_blank"
+                  >Україна, м. Київ, вул. Січових Стрільців 54</a
+                >
+              </li>
+              <li>
+                <a class="contact-link" href="#" target="_blank">
+                  <svg class="contact-social">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="contact-link" href="#" target="_blank">
+                  <svg class="contact-social">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </address>
+          <div class="protect-data-container">
+            <a class="policy-link" href="#" target="_blank"
+              >Політика конфіденційності</a
+            >
+            <p class="protect-data-text">&copy; 2022 Дані захищені</p>
+          </div>
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden">
+      <div class="modal-window">
+        <button class="close-modal" type="button"></button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

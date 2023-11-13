@@ -82,6 +82,15 @@ a {
   padding: 0 24px;
 }
 
+.visually-hiddden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
 /* buttons */
 .get-call-button {
   color: var(--color-primary-light);
@@ -91,11 +100,21 @@ a {
   cursor: pointer;
   font-weight: 600;
   padding: 16px 32px;
+  width: 238px;
+  height: 59px;
+}
+
+.get-call-button.contact {
+  margin-bottom: 16px;
 }
 
 .get-call-button:hover {
   color: var(--color-brand-dark);
   background-color: transparent;
+}
+
+.get-call-button.modal {
+  margin-bottom: 24px;
 }
 
 .carousel-button {
@@ -133,6 +152,10 @@ a {
   transition: color 0.3s;
 }
 
+.footer-menu-list .nav-link{
+  padding-bottom: 16px;
+}
+
 .footer .contact-link {
   color: var(--color-primary-light);
   text-decoration: none;
@@ -140,6 +163,7 @@ a {
   font-weight: 300;
   font-style: normal;
   transition: color 0.3s;
+  padding-bottom: 16px;
 }
 
 .footer .contact-link:hover {
@@ -151,6 +175,7 @@ a {
   font-size: 16px;
   font-weight: 300;
   text-decoration: none;
+    padding-bottom: 16px;
 }
 
 .footer .policy-link:hover {
@@ -440,15 +465,28 @@ a {
 }
 
 .contact-container {
-  max-width: 601px;
+  display: flex;
+  flex-direction: column;
+  max-width: 605px;
 }
 
 .fill-form-text {
   color: var(--color-brand-dark);
+  margin-bottom: 42px;
+}
+
+.contact-container .form-field {
+  margin-bottom: 24px;
+}
+
+.button-contact {
+  text-align: center;
 }
 
 .agreement-text {
   font-size: 12px;
+  text-underline-offset: 2px;
+  text-align: center;
 }
 
 .location-map {
@@ -510,7 +548,7 @@ a {
   flex-shrink: 0;
 }
 
-.footer-navigation .footer-menu-list {
+.footer-menu-list {
   flex-grow: 1;
   max-width: 211px;
 }
@@ -525,6 +563,11 @@ a {
 .contact-info {
   flex-grow: 1;
   max-width: 211px;
+}
+
+.social-media li {
+  display: inline;
+  padding-right: 22px;
 }
 
 .protect-data-container {
@@ -570,6 +613,53 @@ a {
   max-height: 880px;
   background-color: var(--color-primary-light);
   border-radius: 32px;
+  padding: 128px;
+  overflow-y: auto;
+  text-align: center;
+}
+
+/* form */
+.section-title.modal {
+  margin-bottom: 8px;
+}
+
+.fill-form-text.modal {
+  margin-bottom: 72px;
+}
+
+.form-field {
+  margin-bottom: 32px;
+}
+
+.form-input {
+  padding: 16px 42px;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid var(--color-brown);
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.form-input:focus {
+  border-color: var(--color-brand-light);
+  outline: none;
+}
+
+.form-input::placeholder {
+  font-size: 16px;
+  font-weight: 300;
+  flex-shrink: 0;
+  color: var(--color-brown);
+}
+
+.form-input:focus::placeholder {
+  color: var(--color-primary-dark);
+}
+
+.agreement-text.modal {
+  margin: 0 auto;
+  max-width: 215px;
 }
 
 .close-modal {

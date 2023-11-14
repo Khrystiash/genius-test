@@ -1,0 +1,52 @@
+.traditions {
+    padding-top: 0;
+}
+
+.traditions-container {
+    display: flex;
+    gap: 100px;
+    padding-top: 96px;
+    flex-wrap: wrap;
+    /*remove when mobile*/
+}
+
+.traditions-info {
+    display: flex;
+    flex-direction: column;
+    max-width: 710px;
+    /*remove when mobile*/
+    gap: 42px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.traditions-text.limited {
+    max-width: 340px;
+}
+
+.traditions-image {
+    max-height: 466px;
+}
+
+.advantages-item {
+    color: var(--color-primary-light);
+}
+
+.traditions .section-title {
+    margin-bottom: 0;
+}
+
+.brand-text {
+    color: var(--color-brand-light);
+    font-weight: 600;
+}
+
+.uppercase {
+    color: var(--color-brand-light);
+    text-transform: uppercase;
+}
+
+.bakerman-image {
+    border-radius: 400px 400px 0px 0px;
+    flex-shrink: 0;
+}

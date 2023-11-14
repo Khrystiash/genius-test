@@ -1,0 +1,92 @@
+.footer {
+    position: relative;
+    padding: 32px 0;
+    color: var(--color-primary-light);
+    background-image: url(/images/footer-background.jpg);
+    background-color: var(--color-primary-dark);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.footer::before,
+.footer::after {
+    position: absolute;
+    background-repeat: no-repeat;
+    bottom: 0;
+    content: '';
+}
+
+.footer::before {
+    width: 180px;
+    height: 120px;
+    left: 0;
+    background-image: url('/images/one-bread.png');
+}
+
+.footer::after {
+    width: 380px;
+    height: 190px;
+    right: 0;
+    background-image: url('/images/two-breads.png');
+}
+
+.footer .container {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-navigation {
+    display: flex;
+    gap: 20px;
+    flex-basis: 50%;
+    justify-content: space-around;
+}
+
+.footer-navigation .logo {
+    flex-grow: 1;
+    max-width: 211px;
+    flex-shrink: 0;
+}
+
+.footer-menu-list {
+    flex-grow: 1;
+    max-width: 211px;
+}
+
+.external-links {
+    display: flex;
+    gap: 20px;
+    flex-basis: 50%;
+    justify-content: space-around;
+}
+
+.contact-info {
+    flex-grow: 1;
+    max-width: 211px;
+}
+
+.social-media li {
+    display: inline;
+    padding-right: 22px;
+}
+
+.protect-data-container {
+    flex-grow: 1;
+    max-width: 211px;
+}
+
+.contact-social {
+    fill: var(--color-primary-light);
+    width: 32px;
+    height: 32px;
+}
+
+.contact-social:hover {
+    fill: var(--color-brand-light);
+}
+
+.protect-data-text {
+    color: var(--color-brown);
+    font-size: 14px;
+}

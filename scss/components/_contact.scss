@@ -1,0 +1,45 @@
+.section.contact {
+    padding-bottom: 96px;
+}
+
+.contact .section-title {
+    margin-bottom: 16px;
+}
+
+.contact .container {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 605px;
+}
+
+.fill-form-text {
+    color: var(--color-brand-dark);
+    margin-bottom: 42px;
+}
+
+.contact-container .form-field {
+    margin-bottom: 24px;
+}
+
+.button-contact {
+    text-align: center;
+}
+
+.agreement-text {
+    font-size: 12px;
+    text-underline-offset: 2px;
+    text-align: center;
+}
+
+.location-map {
+    width: 100%;
+    border: none;
+    border-radius: 16px;
+    max-width: 603px;
+}

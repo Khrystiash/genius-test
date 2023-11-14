@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Сучасна пекарня</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./scss/main.min.css" />
   </head>
   <body>
     <header>
@@ -138,6 +138,11 @@
             <ul class="formats-list">
               <li class="formats-item">
                 <article class="location-card">
+                  <img
+                    class="format-image"
+                    src="./images/walrus-location.jpg"
+                    alt="Walrus format"
+                  />
                   <h3 class="location-name" lang="en">Walrus</h3>
                   <div class="location-info">
                     <p class="info-item">Площа: до 120 м&sup2;</p>
@@ -152,6 +157,11 @@
               </li>
               <li class="formats-item">
                 <article class="location-card">
+                  <img
+                    class="format-image"
+                    src="./images/horseshoe-location.jpg"
+                    alt="Horseshoe format"
+                  />
                   <h3 class="location-name" lang="en">Horseshoe</h3>
                   <div class="location-info">
                     <p class="info-item">Площа: до 25 м&sup2;</p>
@@ -165,6 +175,11 @@
               </li>
               <li class="formats-item">
                 <article class="location-card">
+                  <img
+                    class="format-image"
+                    src="./images/handlebar-location.jpg"
+                    alt="Handlebar format"
+                  />
                   <h3 class="location-name" lang="en">Handlebar</h3>
                   <div class="location-info">
                     <p class="info-item">Площа: до 15 м&sup2;</p>
@@ -192,7 +207,7 @@
             <p class="fill-form-text">
               Заповни форму, щоб ми зв&acute;язались з тобою!
             </p>
-            <form name="contact-form" autocomplete="off">
+            <form name="contact-form" autocomplete="on">
               <div class="form-field">
                 <label class="form-label visually-hiddden" for="user-name"
                   >Ім&acute;я</label
@@ -203,6 +218,8 @@
                   id="user-name"
                   name="user-name"
                   placeholder="Ім&acute;я"
+                  required
+                  maxlength="30"
                 />
               </div>
               <div class="form-field">
@@ -217,6 +234,9 @@
                   id="user-phone-number"
                   name="user-phone-number"
                   placeholder="Телефон"
+                  required
+                  minlength="10"
+                  maxlength="13"
                 />
               </div>
               <div class="form-field">
@@ -229,6 +249,7 @@
                   id="user-email"
                   name="user-email"
                   placeholder="Електронна пошта"
+                  required
                 />
               </div>
               <div class="button-contact">
@@ -295,20 +316,21 @@
                 >
               </li>
               <div class="social-media">
-              <li>
-                <a class="contact-link" href="#" target="_blank">
-                  <svg class="contact-social">
-                    <use href="./images/icons.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a class="contact-link" href="#" target="_blank">
-                  <svg class="contact-social">
-                    <use href="./images/icons.svg#icon-instagram"></use>
-                  </svg>
-                </a>
-              </li></div>
+                <li>
+                  <a class="contact-link" href="#" target="_blank">
+                    <svg class="contact-social">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="contact-link" href="#" target="_blank">
+                    <svg class="contact-social">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+              </div>
             </ul>
           </address>
           <div class="protect-data-container">
@@ -322,12 +344,16 @@
     </footer>
     <div class="backdrop is-hidden">
       <div class="modal-window">
-        <button class="close-modal" type="button"></button>
+        <button class="close-modal-button" type="button">
+          <svg class="cross-arrow">
+            <use href="./images/icons.svg#icon-cross"></use>
+          </svg>
+        </button>
         <h2 class="section-title modal">Замовити дзвінок</h2>
         <p class="fill-form-text modal">
           Залишіть заявку та наш спеціаліст зв&acute;яжеться з Вами!
         </p>
-        <form name="modal-contact-form" autocomplete="off" novalidate>
+        <form name="modal-contact-form" autocomplete="on">
           <div class="form-field">
             <label class="form-label visually-hiddden" for="user-name"
               >Ім&acute;я</label
@@ -338,6 +364,8 @@
               id="user-name"
               name="user-name"
               placeholder="Ім&acute;я"
+              required
+              maxlength="30"
             />
           </div>
           <div class="form-field">
@@ -350,6 +378,9 @@
               id="user-phone-number"
               name="user-phone-number"
               placeholder="Телефон"
+              required
+              pattern="^\+[0-9]{12}"
+              maxlength="13"
             />
           </div>
           <div class="form-field">
@@ -362,6 +393,7 @@
               id="user-email"
               name="user-email"
               placeholder="Електронна пошта"
+              required
             />
           </div>
           <button

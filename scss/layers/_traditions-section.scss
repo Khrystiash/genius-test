@@ -1,0 +1,40 @@
+.traditions-section {
+    padding-top: 0;
+
+    &__container {
+        display: flex;
+        gap: 100px;
+        padding-top: 96px;
+        flex-wrap: wrap;
+        /*remove when mobile*/
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        max-width: 710px;
+        /*remove when mobile*/
+        gap: 42px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    &__title {
+        margin-bottom: 0;
+    }
+
+    &__text{
+        &--limited{
+            max-width: 340px;
+        }
+    }
+
+    &__image {
+        max-height: 466px;
+    
+        &__bakerman {
+            border-radius: 400px 400px 0px 0px;
+            flex-shrink: 0;
+        }
+    }
+}

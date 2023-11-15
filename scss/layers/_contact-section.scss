@@ -1,0 +1,41 @@
+.contact-section {
+    padding-bottom: 96px;
+
+    &__title {
+        margin-bottom: 16px;
+    }
+
+    .container {
+        display: flex;
+        gap: 22px;
+        flex-wrap: wrap;
+    }
+    
+    &__container {
+        display: flex;
+        flex-direction: column;
+        max-width: 615px;
+
+        .contact-form__field {
+            margin-bottom: 24px;
+        }
+    }
+
+    &__text {
+        margin-bottom: 42px;
+    }
+
+    &__agreement {
+        font-size: 12px;
+        text-underline-offset: 2px;
+        text-align: center;
+        padding-top: 16px;
+    }
+
+    &__map {
+        width: 100%;
+        border: none;
+        border-radius: 16px;
+        max-width: 603px;
+    }
+}

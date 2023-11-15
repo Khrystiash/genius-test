@@ -1,0 +1,107 @@
+.footer {
+    position: relative;
+    padding: 32px 0;
+    color: var(--color-primary-light);
+    background-image: url(/images/footer-background.jpg);
+    background-color: var(--color-primary-dark);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    &::before,
+    &::after {
+        position: absolute;
+        background-repeat: no-repeat;
+        bottom: 0;
+        content: '';
+    }
+
+    &::before {
+        width: 180px;
+        height: 120px;
+        left: 0;
+        background-image: url('/images/one-bread.png');
+    }
+
+    &::after {
+        width: 380px;
+        height: 190px;
+        right: 0;
+        background-image: url('/images/two-breads.png');
+    }
+
+    .container {
+        display: flex;
+        gap: 20px;
+    }
+
+    .nav-link {
+        padding-bottom: 16px;
+    }
+
+   .contact-link {
+       color: var(--color-primary-light);
+       text-decoration: none;
+       font-size: 16px;
+       font-weight: 300;
+       font-style: normal;
+       transition: color 0.3s;
+       padding-bottom: 16px;
+
+       &:hover {
+           color: var(--color-brand-light);
+       }
+   }
+
+   .policy-link {
+       color: var(--color-primary-light);
+       font-size: 16px;
+       font-weight: 300;
+       text-decoration: none;
+       padding-bottom: 16px;
+
+       &:hover {
+           color: var(--color-brand-light);
+       }
+   }
+
+    &__list {
+        flex-grow: 1;
+        max-width: 211px;
+    }
+    
+    &__links {
+        display: flex;
+        gap: 20px;
+        flex-basis: 50%;
+        justify-content: space-around;
+    }
+    
+    &__contact-info {
+        flex-grow: 1;
+        max-width: 211px;
+    }
+
+    &__navigation {
+        display: flex;
+        gap: 20px;
+        flex-basis: 50%;
+        justify-content: space-around;
+        
+        .logo {
+            flex-grow: 1;
+            max-width: 211px;
+            flex-shrink: 0;
+        }
+    }
+
+    &__protect-data{
+        flex-grow: 1;
+        max-width: 211px;
+    }
+
+    &__text {
+        color: var(--color-brown);
+        font-size: 14px;
+    }
+}

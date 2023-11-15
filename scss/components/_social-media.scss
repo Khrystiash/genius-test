@@ -1,0 +1,16 @@
+.social-media {
+    &__item {
+        display: inline;
+        padding-right: 22px;
+    }
+
+        &__icon {
+        fill: var(--color-primary-light);
+        width: 32px;
+        height: 32px;
+
+        &:hover {
+            fill: var(--color-brand-light);
+        }
+    }
+}

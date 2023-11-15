@@ -2,43 +2,13 @@
     color: var(--color-primary-light);
     text-decoration: none;
     transition: color 0.3s;
-}
 
-.nav-link:hover {
-    color: var(--color-brand-light);
+    &:hover {
+        color: var(--color-brand-light);
+    }
 }
 
 .policy-link {
     color: var(--color-primary-dark);
     transition: color 0.3s;
-}
-
-.footer-menu-list .nav-link {
-    padding-bottom: 16px;
-}
-
-.footer .contact-link {
-    color: var(--color-primary-light);
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 300;
-    font-style: normal;
-    transition: color 0.3s;
-    padding-bottom: 16px;
-}
-
-.footer .contact-link:hover {
-    color: var(--color-brand-light);
-}
-
-.footer .policy-link {
-    color: var(--color-primary-light);
-    font-size: 16px;
-    font-weight: 300;
-    text-decoration: none;
-    padding-bottom: 16px;
-}
-
-.footer .policy-link:hover {
-    color: var(--color-brand-light);
 }

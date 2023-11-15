@@ -1,18 +1,23 @@
 @import './utils/fonts';
 @import './utils/variables';
+@import './utils/texts-accent.scss';
+@import './utils/utils';
 
 @import './base';
 
-@import './utils/utils';
-
-@import './components/advantages';
 @import './components/buttons';
-@import './components/chiefs';
-@import './components/contact';
-@import './components/footer';
-@import './components/formats';
-@import './components/header';
-@import './components/hero';
+@import './components/chiefs-card';
+@import './components/forms';
 @import './components/links';
+@import './components/location-card';
 @import './components/modal';
-@import './components/traditions';
+@import './components/social-media';
+
+@import './layers/advantages-section';
+@import './layers/chiefs-section';
+@import './layers/contact-section';
+@import './layers/footer';
+@import './layers/formats-section';
+@import './layers/header';
+@import './layers/hero-section';
+@import './layers/traditions-section';

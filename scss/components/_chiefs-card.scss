@@ -1,0 +1,29 @@
+.chiefs-card {
+    display: flex;
+    gap: 30px;
+
+    &__photo {
+        border-radius: 4px 4px 4px 200px;
+        background-color: var(--color-background-grey);
+        border: var(--color-grey);
+        box-shadow: -16px 16px 0 0 var(--color-primary-light),
+            -16px 16px 0 1px var(--color-brown);
+        max-height: 390px;
+        /*remove when mobile*/
+    }
+
+    &__name {
+        font-size: 40px;
+        font-weight: 600;
+    }
+
+    &__info{
+        &__text{
+            margin-bottom: 24px;
+        }
+        
+        &__text:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

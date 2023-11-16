@@ -9,12 +9,16 @@
   <body>
     <header class="header">
       <div class="container">
-        <div class="header-container">
-          <nav class="header-container__nav">
+        <div class="header__container">
+          <nav class="header__nav">
             <a href="/">
-              <img src="./images/logo.svg" alt="Логотип сучасної пекарні" />
+              <img
+                class="header__logo"
+                src="./images/logo.svg"
+                alt="Логотип сучасної пекарні"
+              />
             </a>
-            <ul class="header-container__menu">
+            <ul class="header__menu">
               <li>
                 <a class="nav-link" href="#traditions-section">Наші традиції</a>
               </li>
@@ -29,9 +33,24 @@
               </li>
             </ul>
           </nav>
-          <button class="get-call-button open-modal" type="button">
+          <button
+            class="get-call-button header__button open-modal"
+            type="button"
+          >
             Замовити дзвінок
           </button>
+          <button class="header__burger open-menu" type="button">
+            <svg class="header__burger__icon">
+              <use href="./images/icons.svg#icon-burger-menu"></use>
+            </svg>
+          </button>
+          <div class="mobile-menu">
+            <button class="close-menu" type="button">
+              <svg class="close-menu__cross-arrow">
+                <use href="./images/icons.svg#icon-cross"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
     </header>
@@ -41,6 +60,12 @@
           <h1 class="hero-section__title">
             <span class="text-brand">Сучасна</span> пекарня
           </h1>
+          <button
+            class="get-call-button hero-section__button open-modal"
+            type="button"
+          >
+            Замовити дзвінок
+          </button>
         </div>
       </section>
       <section class="advantages-section">
@@ -60,7 +85,7 @@
               <h2 class="traditions-section__title section-title">
                 Новий формат традицій
               </h2>
-              <p>
+              <p class="traditions-section__text">
                 <span class="text-brand text-bold uppercase">shop bakery</span>
                 — це пекарня, яка взяла все найкраще, і зберегла смак
                 традиційної випічки та натуральність інгредієнтів.
@@ -69,14 +94,16 @@
                 class="traditions-section__text traditions-section__text--limited"
               >
                 Ми працюємо як найвідоміші мережі —
-                <span class="text-brand">5 хвилин і замовлення готове</span
+                <span class="text-brand text-bold"
+                  ><br />5 хвилин і замовлення готове</span
                 >.<br />А ще у наших пекарень стильний дизайн та висока якість
                 обслуговування!
               </p>
             </div>
-            <div class="traditions-section__image">
+            <div>
               <img
-                class="traditions-section__image__bakerman"
+                class="traditions-section__image"
+                srcset="./images/bakerman.jpg 1x, ./images/bakerman@2x.jpg 2x"
                 src="./images/bakerman.jpg"
                 alt="Чоловік пекар з візком багетів"
               />
@@ -351,14 +378,22 @@
               </li>
               <div class="social-media">
                 <li class="social-media__item">
-                  <a class="social-media__link contact-link" href="#" target="_blank">
+                  <a
+                    class="social-media__link contact-link"
+                    href="#"
+                    target="_blank"
+                  >
                     <svg class="social-media__icon">
                       <use href="./images/icons.svg#icon-facebook"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social-media__item">
-                  <a class="social-media__link contact-link" href="#" target="_blank">
+                  <a
+                    class="social-media__link contact-link"
+                    href="#"
+                    target="_blank"
+                  >
                     <svg class="social-media__icon">
                       <use href="./images/icons.svg#icon-instagram"></use>
                     </svg>
@@ -378,8 +413,8 @@
     </footer>
     <div class="backdrop is-hidden">
       <div class="modal-window">
-        <button class="close-modal-button" type="button">
-          <svg class="close-modal-button__cross-arrow">
+        <button class="close-modal" type="button">
+          <svg class="close-modal__cross-arrow">
             <use href="./images/icons.svg#icon-cross"></use>
           </svg>
         </button>
@@ -403,7 +438,9 @@
             />
           </div>
           <div class="contact-form__field">
-            <label class="contact-form__label visually-hiddden" for="user-phone-number"
+            <label
+              class="contact-form__label visually-hiddden"
+              for="user-phone-number"
               >Телефон</label
             >
             <input
@@ -430,11 +467,7 @@
               required
             />
           </div>
-          <button
-            class="get-call-button"
-            type="submit"
-            autocomplete="off"
-          >
+          <button class="get-call-button" type="submit" autocomplete="off">
             Замовити дзвінок
           </button>
         </form>
@@ -446,6 +479,7 @@
         </p>
       </div>
     </div>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

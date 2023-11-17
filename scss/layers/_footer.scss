@@ -153,6 +153,7 @@
         justify-content: space-around;
 
         @media screen and (min-width:$bp-tablet) {
+            align-self: flex-start;
             flex-direction: row;
         }
         

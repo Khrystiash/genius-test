@@ -1,12 +1,16 @@
 .footer {
+    padding: 24px 0;
     position: relative;
-    padding: 32px 0;
     color: var(--color-primary-light);
     background-image: url(/images/footer-background.jpg);
     background-color: var(--color-primary-dark);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
+    @media screen and (min-width:$bp-tablet) {
+        padding: 32px 0;  
+    }
 
     &::before,
     &::after {
@@ -18,35 +22,76 @@
 
     &::before {
         width: 180px;
-        height: 120px;
+        height: 200px;
+        top: 50px;
         left: 0;
-        background-image: url('/images/one-bread.png');
+        background-image: url('/images/one-bread-mobile.png');
+
+        @media screen and (min-width:$bp-tablet) {
+            width: 180px;
+            height: 120px;
+            top:auto;
+            bottom: 0;
+            left: -50;
+            background-image: url('/images/one-bread.png');
+        }
     }
 
     &::after {
-        width: 380px;
-        height: 190px;
-        right: 0;
-        background-image: url('/images/two-breads.png');
+        width: 100px;
+        height: 96px;
+        right: 0px;
+        bottom: 0;
+        background-image: url('/images/two-breads-mobile.png');
+        
+        @media screen and (min-width:$bp-tablet) {
+            width: 380px;
+            height: 190px;
+            right: -40px;
+            bottom: 0;
+            background-image: url('/images/two-breads.png');
+        }
+
+        @media screen and (min-width:$bp-desktop) {
+            right: 0;
+        }
     }
 
     .container {
         display: flex;
-        gap: 20px;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+
+        @media screen and (min-width:$bp-tablet) {
+            flex-direction: row;
+            text-align: left;
+            align-items: left;
+            gap:20px
+        }
     }
 
     .nav-link {
-        padding-bottom: 16px;
+        padding-bottom: 18px;
+
+        @media screen and (min-width:$bp-tablet) {
+            padding-bottom: 16px;
+        }
     }
 
    .contact-link {
        color: var(--color-primary-light);
        text-decoration: none;
-       font-size: 16px;
+       font-size: 14px;
        font-weight: 300;
        font-style: normal;
        transition: color 0.3s;
-       padding-bottom: 16px;
+       padding-bottom: 18px;
+
+        @media screen and (min-width:$bp-tablet) {
+            font-size: 16px;
+            padding-bottom: 16px;
+        }
 
        &:hover {
            color: var(--color-brand-light);
@@ -55,10 +100,15 @@
 
    .policy-link {
        color: var(--color-primary-light);
-       font-size: 16px;
+       font-size: 14px;
        font-weight: 300;
        text-decoration: none;
-       padding-bottom: 16px;
+       padding-bottom: 8px;
+
+    @media screen and (min-width:$bp-tablet) {
+        font-size: 16px;
+        padding-bottom: 16px;
+    }
 
        &:hover {
            color: var(--color-brand-light);
@@ -68,13 +118,26 @@
     &__list {
         flex-grow: 1;
         max-width: 211px;
+        font-size: 14px;
+        font-weight: 300;
+
+        @media screen and (min-width:$bp-tablet) {
+            font-size: 18px;
+            font-weight: 400;
+        }
     }
     
     &__links {
         display: flex;
-        gap: 20px;
+        flex-direction: column;
+      
         flex-basis: 50%;
         justify-content: space-around;
+
+        @media screen and (min-width:$bp-tablet) {
+            flex-direction: row;
+            gap: 32px;
+        }
     }
     
     &__contact-info {
@@ -84,14 +147,25 @@
 
     &__navigation {
         display: flex;
-        gap: 20px;
+        flex-direction: column;
+        gap: 32px;
         flex-basis: 50%;
         justify-content: space-around;
+
+        @media screen and (min-width:$bp-tablet) {
+            flex-direction: row;
+        }
         
-        .logo {
+        &__logo {
             flex-grow: 1;
-            max-width: 211px;
             flex-shrink: 0;
+            width: 72px;
+            height: 38px;
+        
+            @media screen and (min-width:$bp-tablet) {
+                width: 108px;
+                height: 56px;
+            }
         }
     }
 
@@ -102,6 +176,10 @@
 
     &__text {
         color: var(--color-brown);
-        font-size: 14px;
+        font-size: 12px;
+
+        @media screen and (min-width:$bp-tablet) {
+            font-size: 14px;
+        }
     }
 }
